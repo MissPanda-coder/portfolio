@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Bienvenue sur mon portfolio</title>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+
+  <div class="fullscreenContact">
+    <nav id="nav" class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+       
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+              <a id="navbar-item-miss" class="nav-item nav-link">MissPanda</a>
+                <a href="index.html" class="nav-item nav-link" target="_self">Accueil</a>
+                <a href="aPropos.html" class="nav-item nav-link" target="_self">A propos</a>
+                <a href="realisations.html" class="nav-item nav-link" target="_self">Réalisations</a>
+                <a href="contact.html" class="nav-item nav-link" target="_self">Contact</a>
+            </div>
+            
+        </div>
+    </div>
+</nav>
+
+<section id="contact">
+    <p class="section-header">Contact</p>
+  <div class="contact-wrapper">
+    <form id="contact-form" class="form-horizontal" role="form">
+       
+      <div class="form-group">
+          <input type="text" class="form-control" id="name" placeholder="NOM" name="name" value="" required>
+             </div>
+
+      <div class="form-group">
+          <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required >
+        </div>
+   
+
+      <textarea class="form-control" rows="7" placeholder="MESSAGE" name="message" required ></textarea>
+      
+      <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND" autocomplete="off">
+        <div class="alt-send-button">
+          <i class="fa fa-paper-plane"></i><span class="send-text">ENVOYER</span>
+        </div>
+      
+      </button>
+      
+    </form>
+    
+  <!-- Left contact page --> 
+    
+      <div class="direct-contact-container">
+
+        <ul class="contact-list">
+          <li class="list-item"><i class="fa-solid fa-location-crosshairs"><span class="contact-text place">11 rue Victor Hugo</span></i></li>
+          <li class="list-item"><i class="fa-solid fa-location-crosshairs"><span class="contact-text place">83330 Le Beausset</span></i></li>
+          <li class="list-item"><i class="fa fa-phone"><span class="contact-text phone">06 65 42 31 49</span></i></li>
+          
+          <li class="list-item"><i class="fa fa-envelope"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">adeline.aiguier@gmail.com</a></span></i></li>
+          
+        </ul>
+
+        <div class="lign"></div>
+        <ul class="social-media-list">
+          <li><a href="https://github.com/MissPanda-coder" target="_blank" class="contact-icon">
+            <i class="fa-brands fa-github" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="https://codepen.io/Ad-Line" target="_blank" class="contact-icon">
+            <i class="fa-brands fa-codepen" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="https://twitter.com/Ad_lineA" target="_blank" class="contact-icon">
+            <i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+          </li>     
+        </ul>
+        <div class="lign"></div>
+
+      </div>
+      
+  </div>
+  <button id="cv-button">Télécharger CV</button>
+  
+</section>  
+  </div>
+
+
+<script src="main.js"></script>
+
+  
+</body>
+</html>
