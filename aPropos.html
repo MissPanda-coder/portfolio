@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Bienvenue sur mon portfolio</title>
+</head>
+<body>
+
+  <div class="fullscreenAPropos">
+    <nav id="nav" class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+              <a id="navbar-item-miss" class="nav-item nav-link">MissPanda</a>
+                <a href="index.html" class="nav-item nav-link" target="_self">Accueil</a>
+                <a href="aPropos.html" class="nav-item nav-link" target="_self">A propos</a>
+                <a href="realisations.html" class="nav-item nav-link" target="_self">Réalisations</a>
+                <a href="contact.html" class="nav-item nav-link" target="_self">Contact</a>
+            </div>
+            
+        </div>
+    </div>
+</nav>
+
+<section id="aPropos">
+<div id="carousel">
+  <figure id="spinner">
+    <div class="img-wrapper">
+    <img src="img/BOOTSTRAP.png" alt></div>
+    <div class="img-wrapper"><img src="img/CSS.png" alt></div>
+    <div class="img-wrapper"><img src="img/GITHUB.png" alt></div>
+    <div class="img-wrapper"><img src="img/HTML.png" alt></div>
+    <div class="img-wrapper"><img src="img/JS.png" alt></div>
+    <div class="img-wrapper"><img src="img/MYSQL.png" alt></div>
+    <div class="img-wrapper"><img src="img/PHP.png" alt></div>
+    <div class="img-wrapper"><img src="img/SASS.png" alt></div>
+  </figure>
+</div>
+<span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span>
+<span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span>
+
+<article>
+  <span class="article_span-size" id="H">H</span>
+
+  <p class="article_p" id="article_first">Développeuse web rigoureuse, je conçois des sites optimisés en maîtrisant le SEO, la sémantique et l'accessibilité.J'utilise des bibliothèques pour des expériences dynamiques, couvrant le responsive CSS, les interactions avec le DOM, le stockage local, les API et les Bundlers (npm).</p>
+
+    <span class="article_span-size" id="E">E</span>
+
+ <p class="article_p" id="article_second"> J'ai une expertise étendue en conception de bases de données (SGBDR), du modèle conceptuel à l'implémentation rigoureuse pour des interfaces sécurisées. Mon travail englobe le développement complet des back-offices, offrant ainsi des solutions web complètes et performantes.</p>
+
+ <span class="article_span-size" id="Y">Y</span>
+</article>
+</section>
+
+    <script src="main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  
+</body>
+</html>
+
