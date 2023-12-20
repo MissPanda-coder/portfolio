@@ -27,7 +27,7 @@ $c-hover:#57A8FE;
 
 .scroll{
   position: absolute;
-  top:80px;
+bottom:80px;
   left:45px;
   color:aliceblue;
   font-size: 0.8rem;
@@ -49,8 +49,8 @@ $c-hover:#57A8FE;
   padding: 30px;
   width: 100%;
   transition: all .4s;
+  z-index: 999999;
 }
-
 
 .nav-item {
   padding: 0 10px;
@@ -67,6 +67,7 @@ $c-hover:#57A8FE;
 .navbar-toggler {
   cursor: pointer;
   outline: 0;
+  
 }
 
 .ham {
@@ -103,15 +104,8 @@ $c-hover:#57A8FE;
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: 1px;
+ 
 }
-
-.costum-navbar {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background-color: #000 !important;  
-  position: fixed;
-}
-
 
 .letterCode{
     font-family: boston, sans-serif;
@@ -242,12 +236,9 @@ $c-hover:#57A8FE;
   
 /*    TELEPHONES */
 @media screen and (max-width: 768px){
- 
-
-    .menu-item {
-        padding: 10px 10px 10px;
-    }
-  
+  .scroll{
+display: none;
+  } 
   .letterCode{
     font-size: 50px;
   }
@@ -273,7 +264,9 @@ $c-hover:#57A8FE;
   /*    TABLETTES  */
   @media screen and (min-width: 769px) and (max-width: 992px) {
   
-
+    .scroll{
+      display: none;
+        } 
   
   }
   

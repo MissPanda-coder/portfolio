@@ -169,27 +169,16 @@
       }
     
   
-
-// ===== NAVBAR ===== //
-$(window).scroll(function() {
-  
-  let position    =   $(this).scrollTop();
-    if (position >= 100) {
-      $('.nav-menu').addClass('costum-navbar');
-    } else {
-      $('.nav-menu').removeClass('costum-navbar');
-    }
-  
-});
-
-
 // ===== HAMBURGER BUTTON ===== //
-$(document).ready(function() {
+document.addEventListener('DOMContentLoaded', function() {
+  let navButton = document.querySelector('.nav-button');
+  let navBar = document.getElementById('myNavbar'); 
   
-  $('.nav-button').click(function() {
-    $('.nav-button').toggleClass('change');
-  })
+  navButton.addEventListener('click', function() {
+    navButton.classList.toggle('change');
     
+   
+  });
 });
 
    //A PROPOS//

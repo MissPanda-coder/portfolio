@@ -20,7 +20,7 @@
 
 .scroll {
   position: absolute;
-  top: 80px;
+  bottom: 80px;
   left: 45px;
   color: aliceblue;
   font-size: 0.8rem;
@@ -42,6 +42,7 @@
   padding: 30px;
   width: 100%;
   transition: all 0.4s;
+  z-index: 999999;
 }
 
 .nav-item {
@@ -94,13 +95,6 @@
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: 1px;
-}
-
-.costum-navbar {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background-color: #000 !important;
-  position: fixed;
 }
 
 .letterCode {
@@ -228,8 +222,8 @@
 
 /*    TELEPHONES */
 @media screen and (max-width: 768px) {
-  .menu-item {
-    padding: 10px 10px 10px;
+  .scroll {
+    display: none;
   }
   .letterCode {
     font-size: 50px;
@@ -249,6 +243,11 @@
   }
 }
 /*    TABLETTES  */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .scroll {
+    display: none;
+  }
+}
 @font-face {
   font-family: bebas;
   src: url(../../fonts/BebasNeue-Regular.eot);
@@ -270,7 +269,7 @@
 
 .scroll {
   position: absolute;
-  top: 80px;
+  bottom: 80px;
   left: 45px;
   color: aliceblue;
   font-size: 0.8rem;
@@ -292,6 +291,7 @@
   padding: 30px;
   width: 100%;
   transition: all 0.4s;
+  z-index: 999999;
 }
 
 .nav-item {
@@ -344,13 +344,6 @@
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: 1px;
-}
-
-.costum-navbar {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background-color: #000 !important;
-  position: fixed;
 }
 
 .letterCode {
@@ -478,8 +471,8 @@
 
 /*    TELEPHONES */
 @media screen and (max-width: 768px) {
-  .menu-item {
-    padding: 10px 10px 10px;
+  .scroll {
+    display: none;
   }
   .letterCode {
     font-size: 50px;
@@ -499,6 +492,11 @@
   }
 }
 /*    TABLETTES  */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .scroll {
+    display: none;
+  }
+}
 .fullscreenAPropos {
   background-color: black;
   height: 100vh;
@@ -645,23 +643,24 @@ article {
 @media screen and (max-width: 768px) {
   .fullscreenAPropos {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
   #carousel {
     display: none;
   }
   .ss-icon {
-    display: none;
+    display: none !important;
   }
   article {
     display: flex;
     flex-flow: column nowrap;
     width: 90%;
-    margin: auto;
+    margin-left: 13px;
+    text-align: justify;
   }
   #H, #E, #Y {
     font-size: 42px;
-    margin: 10px auto;
+    margin: 5px auto;
     font-weight: 700;
   }
   .article_span-size {
@@ -712,6 +711,9 @@ article {
   }
   #carousel {
     margin: 0;
+  }
+  .ss-icon {
+    display: none;
   }
   article {
     display: flex;
@@ -785,7 +787,7 @@ article {
 
 .scroll {
   position: absolute;
-  top: 80px;
+  bottom: 80px;
   left: 45px;
   color: aliceblue;
   font-size: 0.8rem;
@@ -807,6 +809,7 @@ article {
   padding: 30px;
   width: 100%;
   transition: all 0.4s;
+  z-index: 999999;
 }
 
 .nav-item {
@@ -859,13 +862,6 @@ article {
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: 1px;
-}
-
-.costum-navbar {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background-color: #000 !important;
-  position: fixed;
 }
 
 .letterCode {
@@ -993,8 +989,8 @@ article {
 
 /*    TELEPHONES */
 @media screen and (max-width: 768px) {
-  .menu-item {
-    padding: 10px 10px 10px;
+  .scroll {
+    display: none;
   }
   .letterCode {
     font-size: 50px;
@@ -1014,14 +1010,18 @@ article {
   }
 }
 /*    TABLETTES  */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .scroll {
+    display: none;
+  }
+}
 .underConstruction {
-  position: relative;
   height: 100vh;
-  z-index: -10;
   background: #0F173E;
   background: -moz-linear-gradient(top, #0F173E 0%, #1B76A4 60%, #3B545D 100%);
   background: -webkit-linear-gradient(top, #0F173E 0%, #1B76A4 60%, #3B545D 100%);
   background: linear-gradient(to bottom, #0F173E 0%, #1B76A4 60%, #3B545D 100%);
+  position: relative;
 }
 
 .city-stuff {
@@ -1495,7 +1495,7 @@ article {
 
 .scroll {
   position: absolute;
-  top: 80px;
+  bottom: 80px;
   left: 45px;
   color: aliceblue;
   font-size: 0.8rem;
@@ -1517,6 +1517,7 @@ article {
   padding: 30px;
   width: 100%;
   transition: all 0.4s;
+  z-index: 999999;
 }
 
 .nav-item {
@@ -1569,13 +1570,6 @@ article {
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: 1px;
-}
-
-.costum-navbar {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background-color: #000 !important;
-  position: fixed;
 }
 
 .letterCode {
@@ -1703,8 +1697,8 @@ article {
 
 /*    TELEPHONES */
 @media screen and (max-width: 768px) {
-  .menu-item {
-    padding: 10px 10px 10px;
+  .scroll {
+    display: none;
   }
   .letterCode {
     font-size: 50px;
@@ -1724,6 +1718,11 @@ article {
   }
 }
 /*    TABLETTES  */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .scroll {
+    display: none;
+  }
+}
 .fullscreenContact {
   background-color: black;
   width: 100%;
@@ -1977,6 +1976,61 @@ textarea {
   #cv-button {
     top: 830px;
     left: 50%;
+    width: 40%;
+  }
+}
+@media screen and (max-width: 361px) {
+  .fullscreenContact {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+  }
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .send-button {
+    width: 300px;
+  }
+  .alt-send-button {
+    width: 300px;
+  }
+  .direct-contact-container, .form-horizontal {
+    margin: 0 auto;
+  }
+  .direct-contact-container {
+    margin-top: 40px;
+    max-width: 300px;
+  }
+  .contact-list {
+    margin-left: 0;
+    padding-right: 0;
+  }
+  ul.contact-list {
+    padding: 0;
+  }
+  .social-media-list li {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+  }
+  .social-media-list li:after {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .place {
+    margin-left: 23px;
+  }
+  .phone {
+    margin-left: 23px;
+  }
+  .gmail {
+    margin-left: 23px;
+  }
+  #cv-button {
+    top: 130px;
+    left: 52%;
     width: 40%;
   }
 }

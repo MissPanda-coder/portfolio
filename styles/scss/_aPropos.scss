@@ -129,28 +129,28 @@ margin-top: 30px;
 
 .fullscreenAPropos{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 #carousel{
   display:none;
-
 }
 
 .ss-icon{
-  display: none;
+  display: none !important;
 }
 
 article{
   display: flex;
   flex-flow: column nowrap;
   width: 90%;
-  margin: auto;
+  margin-left: 13px;
+  text-align: justify;
   }
 
   #H, #E, #Y{
     font-size:42px;
-      margin: 10px auto;
+      margin: 5px auto;
       font-weight: 700;
   }
 
@@ -217,7 +217,9 @@ article{
 //  padding-top: 50px;
  margin:0;
 }
-
+.ss-icon{
+  display: none;
+}
   article{
     display: flex;
     flex-flow: column nowrap;
