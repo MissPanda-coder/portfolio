@@ -20,31 +20,87 @@
 
 .scroll {
   position: absolute;
-  top: 55px;
-  left: 15px;
+  top: 80px;
+  left: 45px;
   color: aliceblue;
   font-size: 0.8rem;
 }
 
-#nav {
-  background-color: transparent;
-  font-family: bebas, sans-serif;
+.navbar-brand {
+  color: aliceblue !important;
+  padding: 0 15px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-family: "bebas", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 3px;
 }
 
-#navbar-item-miss {
-  font-size: 1.2rem;
-  font-weight: 700;
+.nav-menu {
+  background: transparent;
+  padding: 30px;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.nav-item {
+  padding: 0 10px;
+}
+
+.menu-item {
+  font-family: "bebas", sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: aliceblue !important;
+  text-transform: uppercase;
+}
+
+.navbar-toggler {
+  cursor: pointer;
+  outline: 0;
+}
+
+.ham {
+  transition: width 0.3s;
+  background: #F9F8F7;
+}
+
+.line1, .line3 {
+  width: 28px;
+  height: 2px;
+  margin: 6px;
+  transition: 0.4s;
+}
+
+.change .line1 {
+  transform: rotate(-45deg) translate(-3px, 2px);
+}
+
+.change .line3 {
+  transform: rotate(45deg) translate(-3px, -2px);
+}
+
+.menu-item:hover {
+  color: #57A8FE !important;
+}
+
+.nav-active {
   color: aliceblue;
-  margin-right: 40px;
 }
 
-.navbar-nav a {
-  color: aliceblue;
-  margin-left: 70px;
+.dropdown-item {
+  font-family: "bebas", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
 }
 
-.navbar-nav a:hover {
-  color: #57A8FE;
+.costum-navbar {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #000 !important;
+  position: fixed;
 }
 
 .letterCode {
@@ -56,13 +112,13 @@
 .letterPassion {
   font-family: boston, sans-serif;
   font-size: 250px !important;
-  color: #655C6D;
+  color: #7AA8AB;
 }
 
 .letterCrea {
   font-family: boston, sans-serif;
   font-size: 250px;
-  color: #090909;
+  color: #756980;
 }
 
 .title-wrapper {
@@ -94,7 +150,7 @@
   position: absolute;
   overflow: hidden;
   top: 0;
-  left: 0;
+  left: 300px;
   perspective: 1000px;
   transform-style: preserve-3d;
   z-index: 0;
@@ -171,6 +227,27 @@
 }
 
 /*    TELEPHONES */
+@media screen and (max-width: 768px) {
+  .menu-item {
+    padding: 10px 10px 10px;
+  }
+  .letterCode {
+    font-size: 50px;
+  }
+  .letterPassion {
+    font-size: 50px !important;
+  }
+  .letterCrea {
+    font-size: 50px;
+  }
+  .ss-container .img {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    perspective: 1000px;
+  }
+}
 /*    TABLETTES  */
 @font-face {
   font-family: bebas;
@@ -193,31 +270,87 @@
 
 .scroll {
   position: absolute;
-  top: 55px;
-  left: 15px;
+  top: 80px;
+  left: 45px;
   color: aliceblue;
   font-size: 0.8rem;
 }
 
-#nav {
-  background-color: transparent;
-  font-family: bebas, sans-serif;
+.navbar-brand {
+  color: aliceblue !important;
+  padding: 0 15px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-family: "bebas", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 3px;
 }
 
-#navbar-item-miss {
-  font-size: 1.2rem;
-  font-weight: 700;
+.nav-menu {
+  background: transparent;
+  padding: 30px;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.nav-item {
+  padding: 0 10px;
+}
+
+.menu-item {
+  font-family: "bebas", sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: aliceblue !important;
+  text-transform: uppercase;
+}
+
+.navbar-toggler {
+  cursor: pointer;
+  outline: 0;
+}
+
+.ham {
+  transition: width 0.3s;
+  background: #F9F8F7;
+}
+
+.line1, .line3 {
+  width: 28px;
+  height: 2px;
+  margin: 6px;
+  transition: 0.4s;
+}
+
+.change .line1 {
+  transform: rotate(-45deg) translate(-3px, 2px);
+}
+
+.change .line3 {
+  transform: rotate(45deg) translate(-3px, -2px);
+}
+
+.menu-item:hover {
+  color: #57A8FE !important;
+}
+
+.nav-active {
   color: aliceblue;
-  margin-right: 40px;
 }
 
-.navbar-nav a {
-  color: aliceblue;
-  margin-left: 70px;
+.dropdown-item {
+  font-family: "bebas", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
 }
 
-.navbar-nav a:hover {
-  color: #57A8FE;
+.costum-navbar {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #000 !important;
+  position: fixed;
 }
 
 .letterCode {
@@ -229,13 +362,13 @@
 .letterPassion {
   font-family: boston, sans-serif;
   font-size: 250px !important;
-  color: #655C6D;
+  color: #7AA8AB;
 }
 
 .letterCrea {
   font-family: boston, sans-serif;
   font-size: 250px;
-  color: #090909;
+  color: #756980;
 }
 
 .title-wrapper {
@@ -267,7 +400,7 @@
   position: absolute;
   overflow: hidden;
   top: 0;
-  left: 0;
+  left: 300px;
   perspective: 1000px;
   transform-style: preserve-3d;
   z-index: 0;
@@ -344,6 +477,27 @@
 }
 
 /*    TELEPHONES */
+@media screen and (max-width: 768px) {
+  .menu-item {
+    padding: 10px 10px 10px;
+  }
+  .letterCode {
+    font-size: 50px;
+  }
+  .letterPassion {
+    font-size: 50px !important;
+  }
+  .letterCrea {
+    font-size: 50px;
+  }
+  .ss-container .img {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    perspective: 1000px;
+  }
+}
 /*    TABLETTES  */
 .fullscreenAPropos {
   background-color: black;
@@ -631,31 +785,87 @@ article {
 
 .scroll {
   position: absolute;
-  top: 55px;
-  left: 15px;
+  top: 80px;
+  left: 45px;
   color: aliceblue;
   font-size: 0.8rem;
 }
 
-#nav {
-  background-color: transparent;
-  font-family: bebas, sans-serif;
+.navbar-brand {
+  color: aliceblue !important;
+  padding: 0 15px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-family: "bebas", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 3px;
 }
 
-#navbar-item-miss {
-  font-size: 1.2rem;
-  font-weight: 700;
+.nav-menu {
+  background: transparent;
+  padding: 30px;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.nav-item {
+  padding: 0 10px;
+}
+
+.menu-item {
+  font-family: "bebas", sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: aliceblue !important;
+  text-transform: uppercase;
+}
+
+.navbar-toggler {
+  cursor: pointer;
+  outline: 0;
+}
+
+.ham {
+  transition: width 0.3s;
+  background: #F9F8F7;
+}
+
+.line1, .line3 {
+  width: 28px;
+  height: 2px;
+  margin: 6px;
+  transition: 0.4s;
+}
+
+.change .line1 {
+  transform: rotate(-45deg) translate(-3px, 2px);
+}
+
+.change .line3 {
+  transform: rotate(45deg) translate(-3px, -2px);
+}
+
+.menu-item:hover {
+  color: #57A8FE !important;
+}
+
+.nav-active {
   color: aliceblue;
-  margin-right: 40px;
 }
 
-.navbar-nav a {
-  color: aliceblue;
-  margin-left: 70px;
+.dropdown-item {
+  font-family: "bebas", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
 }
 
-.navbar-nav a:hover {
-  color: #57A8FE;
+.costum-navbar {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #000 !important;
+  position: fixed;
 }
 
 .letterCode {
@@ -667,13 +877,13 @@ article {
 .letterPassion {
   font-family: boston, sans-serif;
   font-size: 250px !important;
-  color: #655C6D;
+  color: #7AA8AB;
 }
 
 .letterCrea {
   font-family: boston, sans-serif;
   font-size: 250px;
-  color: #090909;
+  color: #756980;
 }
 
 .title-wrapper {
@@ -705,7 +915,7 @@ article {
   position: absolute;
   overflow: hidden;
   top: 0;
-  left: 0;
+  left: 300px;
   perspective: 1000px;
   transform-style: preserve-3d;
   z-index: 0;
@@ -782,6 +992,27 @@ article {
 }
 
 /*    TELEPHONES */
+@media screen and (max-width: 768px) {
+  .menu-item {
+    padding: 10px 10px 10px;
+  }
+  .letterCode {
+    font-size: 50px;
+  }
+  .letterPassion {
+    font-size: 50px !important;
+  }
+  .letterCrea {
+    font-size: 50px;
+  }
+  .ss-container .img {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    perspective: 1000px;
+  }
+}
 /*    TABLETTES  */
 .underConstruction {
   position: relative;
@@ -1264,31 +1495,87 @@ article {
 
 .scroll {
   position: absolute;
-  top: 55px;
-  left: 15px;
+  top: 80px;
+  left: 45px;
   color: aliceblue;
   font-size: 0.8rem;
 }
 
-#nav {
-  background-color: transparent;
-  font-family: bebas, sans-serif;
+.navbar-brand {
+  color: aliceblue !important;
+  padding: 0 15px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-family: "bebas", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 3px;
 }
 
-#navbar-item-miss {
-  font-size: 1.2rem;
-  font-weight: 700;
+.nav-menu {
+  background: transparent;
+  padding: 30px;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.nav-item {
+  padding: 0 10px;
+}
+
+.menu-item {
+  font-family: "bebas", sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: aliceblue !important;
+  text-transform: uppercase;
+}
+
+.navbar-toggler {
+  cursor: pointer;
+  outline: 0;
+}
+
+.ham {
+  transition: width 0.3s;
+  background: #F9F8F7;
+}
+
+.line1, .line3 {
+  width: 28px;
+  height: 2px;
+  margin: 6px;
+  transition: 0.4s;
+}
+
+.change .line1 {
+  transform: rotate(-45deg) translate(-3px, 2px);
+}
+
+.change .line3 {
+  transform: rotate(45deg) translate(-3px, -2px);
+}
+
+.menu-item:hover {
+  color: #57A8FE !important;
+}
+
+.nav-active {
   color: aliceblue;
-  margin-right: 40px;
 }
 
-.navbar-nav a {
-  color: aliceblue;
-  margin-left: 70px;
+.dropdown-item {
+  font-family: "bebas", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
 }
 
-.navbar-nav a:hover {
-  color: #57A8FE;
+.costum-navbar {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #000 !important;
+  position: fixed;
 }
 
 .letterCode {
@@ -1300,13 +1587,13 @@ article {
 .letterPassion {
   font-family: boston, sans-serif;
   font-size: 250px !important;
-  color: #655C6D;
+  color: #7AA8AB;
 }
 
 .letterCrea {
   font-family: boston, sans-serif;
   font-size: 250px;
-  color: #090909;
+  color: #756980;
 }
 
 .title-wrapper {
@@ -1338,7 +1625,7 @@ article {
   position: absolute;
   overflow: hidden;
   top: 0;
-  left: 0;
+  left: 300px;
   perspective: 1000px;
   transform-style: preserve-3d;
   z-index: 0;
@@ -1415,6 +1702,27 @@ article {
 }
 
 /*    TELEPHONES */
+@media screen and (max-width: 768px) {
+  .menu-item {
+    padding: 10px 10px 10px;
+  }
+  .letterCode {
+    font-size: 50px;
+  }
+  .letterPassion {
+    font-size: 50px !important;
+  }
+  .letterCrea {
+    font-size: 50px;
+  }
+  .ss-container .img {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    perspective: 1000px;
+  }
+}
 /*    TABLETTES  */
 .fullscreenContact {
   background-color: black;
@@ -1610,6 +1918,7 @@ textarea {
   border: 1px solid rgba(255, 255, 255, 0.5019607843);
   transition: 0.5s ease;
   user-select: none;
+  text-decoration: none;
 }
 
 #cv-button:hover, :focus {

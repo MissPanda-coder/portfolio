@@ -31,6 +31,7 @@
     transform-origin: 50% 50% -500px;
     outline:1px solid aliceblue; 
   }
+  
   figure#spinner div:nth-child(1) { transform:rotateY(0deg); 
   }
   figure#spinner div:nth-child(2) { transform: rotateY(-45deg); }

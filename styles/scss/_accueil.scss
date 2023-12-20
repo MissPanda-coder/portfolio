@@ -9,6 +9,11 @@
   src: url(../../fonts/boston.ttf);
 }
 
+$c-code:#B1A995;
+$c-passion:#7AA8AB;
+$c-crea:#756980;
+$c-hover:#57A8FE;
+
 .fullscreenAccueil{
   overflow: hidden;
   display: flex;
@@ -22,49 +27,108 @@
 
 .scroll{
   position: absolute;
-  top:55px;
-  left:15px;
+  top:80px;
+  left:45px;
   color:aliceblue;
   font-size: 0.8rem;
 }
 
-#nav{
-  background-color: transparent;
-  font-family: bebas, sans-serif;
+.navbar-brand {
+  color: aliceblue !important;
+  padding: 0 15px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-family: 'bebas', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 3px;
 }
 
-#navbar-item-miss{
-  font-size: 1.2rem;
-  font-weight: 700;
+.nav-menu {
+  background: transparent;
+  padding: 30px;
+  width: 100%;
+  transition: all .4s;
+}
+
+
+.nav-item {
+  padding: 0 10px;
+}
+
+.menu-item {
+  font-family: 'bebas', sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: aliceblue !important;
+  text-transform: uppercase;
+}
+
+.navbar-toggler {
+  cursor: pointer;
+  outline: 0;
+}
+
+.ham {
+  transition: width 0.3s;
+  background: #F9F8F7;
+}
+
+.line1, .line3  {
+  width: 28px;
+  height: 2px;
+  margin: 6px;    
+  transition:  0.4s;
+  
+}
+
+.change .line1 {
+  transform: rotate(-45deg) translate(-3px, 2px);
+}
+
+.change .line3 {
+  transform: rotate(45deg) translate(-3px, -2px);
+}
+
+.menu-item:hover {
+  color: $c-hover !important;
+}
+
+.nav-active {
   color:aliceblue;
-  margin-right: 40px;
 }
 
-.navbar-nav a{
-  color:aliceblue;
-  margin-left:70px;
+.dropdown-item {
+  font-family: 'bebas', sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
 }
 
-.navbar-nav a:hover{
-  color: #57A8FE;
+.costum-navbar {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #000 !important;  
+  position: fixed;
 }
+
 
 .letterCode{
     font-family: boston, sans-serif;
     font-size: 250px;
-    color:#B1A995;
+    color:$c-code;
   }
 
   .letterPassion{
     font-family: boston, sans-serif;
     font-size: 250px !important;
-    color:#655C6D;
+    color:$c-passion;
   }
   
   .letterCrea{
     font-family: boston, sans-serif;
     font-size: 250px;
-    color:#090909; 
+    color:$c-crea; 
   }
 
   .title-wrapper{
@@ -97,7 +161,7 @@
       position: absolute;
       overflow: hidden;
       top: 0;
-      left: 0;
+      left: 300px;
       perspective: 1000px;
       transform-style: preserve-3d;
       z-index: 0;
@@ -178,8 +242,31 @@
   
 /*    TELEPHONES */
 @media screen and (max-width: 768px){
+ 
 
+    .menu-item {
+        padding: 10px 10px 10px;
+    }
+  
+  .letterCode{
+    font-size: 50px;
+  }
+  .letterPassion{
+    font-size: 50px !important;
+  }
+  .letterCrea{
+        font-size: 50px;
+     }
     
+     .ss-container .img{
+  
+      position: absolute;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      perspective: 1000px;
+    
+  }
   }
   
   

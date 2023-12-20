@@ -170,6 +170,28 @@
     
   
 
+// ===== NAVBAR ===== //
+$(window).scroll(function() {
+  
+  let position    =   $(this).scrollTop();
+    if (position >= 100) {
+      $('.nav-menu').addClass('costum-navbar');
+    } else {
+      $('.nav-menu').removeClass('costum-navbar');
+    }
+  
+});
+
+
+// ===== HAMBURGER BUTTON ===== //
+$(document).ready(function() {
+  
+  $('.nav-button').click(function() {
+    $('.nav-button').toggleClass('change');
+  })
+    
+});
+
    //A PROPOS//
    var angle = 0;
    function galleryspin(sign) { 
@@ -178,6 +200,9 @@
    spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg);");
    }
 
+
+
+   
 //CONTACT//
 
   // const name = document.getElementById('name');
