@@ -1,23 +1,9 @@
+@import "_variables";
 
-@font-face {
-  font-family: bebas;
-  src: url(../../fonts/BebasNeue-Regular.eot);
-}
-
-@font-face {
-  font-family: boston;
-  src: url(../../fonts/boston.ttf);
-}
-
-$c-code:#B1A995;
-$c-passion:#7AA8AB;
-$c-crea:#756980;
-$c-hover:#57A8FE;
-
-.fullscreenAccueil{
+#Accueil{
   overflow: hidden;
   display: flex;
-  background-color: black;
+  background-color: #0F0F0F;
   flex-direction: column; 
   justify-content: center; 
   align-items: center; 
@@ -33,107 +19,40 @@ bottom:80px;
   font-size: 0.8rem;
 }
 
-.navbar-brand {
-  color: aliceblue !important;
-  padding: 0 15px;
-  padding-top: 10px;
-  padding-bottom: 5px;
-  font-family: 'bebas', sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 3px;
-}
-
-.nav-menu {
-  background: transparent;
-  padding: 30px;
+.title-wrapper{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   width: 100%;
-  transition: all .4s;
-  z-index: 999999;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 1;
 }
 
-.nav-item {
-  padding: 0 10px;
-}
-
-.menu-item {
-  font-family: 'bebas', sans-serif;
-  font-size: 11px;
-  letter-spacing: 2px;
-  color: aliceblue !important;
-  text-transform: uppercase;
-}
-
-.navbar-toggler {
-  cursor: pointer;
-  outline: 0;
-  
-}
-
-.ham {
-  transition: width 0.3s;
-  background: #F9F8F7;
-}
-
-.line1, .line3  {
-  width: 28px;
-  height: 2px;
-  margin: 6px;    
-  transition:  0.4s;
-  
-}
-
-.change .line1 {
-  transform: rotate(-45deg) translate(-3px, 2px);
-}
-
-.change .line3 {
-  transform: rotate(45deg) translate(-3px, -2px);
-}
-
-.menu-item:hover {
-  color: $c-hover !important;
-}
-
-.nav-active {
-  color:aliceblue;
-}
-
-.dropdown-item {
-  font-family: 'bebas', sans-serif;
-  text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 1px;
- 
-}
-
-.letterCode{
+.scroll-letter-code{
     font-family: boston, sans-serif;
     font-size: 250px;
     color:$c-code;
   }
 
-  .letterPassion{
+  .scroll-letter-passion{
     font-family: boston, sans-serif;
     font-size: 250px !important;
     color:$c-passion;
   }
   
-  .letterCrea{
+  .scroll-letter-creative{
     font-family: boston, sans-serif;
     font-size: 250px;
     color:$c-crea; 
   }
 
-  .title-wrapper{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+
+  .ss-container{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
     width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    z-index: 1;
-  }
 
   .ss-item{
     display: flex;
@@ -142,14 +61,7 @@ bottom:80px;
     align-items: center;
     }
   
-
-  .ss-container{
-    position: relative;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-
-.img {
+.scroll-img {
       width: 100%;
       height: 100%;
       position: absolute;

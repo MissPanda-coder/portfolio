@@ -134,7 +134,8 @@
         } else {
           eventType = 'wheel';
         }
-        scrollContainerEle.addEventListener(eventType, function (event) {
+
+      scrollContainerEle.addEventListener(eventType, function (event) {
           let scrollTop = scrollContainerEle.scrollTop,
               scrollHeight = scrollContainerEle.scrollHeight,
               height = scrollContainerEle.clientHeight;
@@ -173,7 +174,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   let navButton = document.querySelector('.nav-button');
   let navBar = document.getElementById('myNavbar'); 
-  
   navButton.addEventListener('click', function() {
     navButton.classList.toggle('change');
     
@@ -182,16 +182,15 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
    //A PROPOS//
-   var angle = 0;
    function galleryspin(sign) { 
-   spinner = document.querySelector("#spinner");
-   if (!sign) { angle = angle + 45; } else { angle = angle - 45; }
-   spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg);");
-   }
+    let spinner = document.querySelector("#spinner");
+    let currentAngle = spinner.dataset.angle ? parseInt(spinner.dataset.angle) : 0;
+    let newAngle = sign ? currentAngle - 45 : currentAngle + 45;
 
+    spinner.style.transform = `rotateY(${newAngle}deg)`;
+    spinner.dataset.angle = newAngle;
+}
 
-
-   
 //CONTACT//
 
   // const name = document.getElementById('name');

@@ -1,0 +1,15 @@
+@import "_accueil";
+@import "_aPropos";
+@import "_navbar";
+@import "_variables";
+@import "_realisations";
+@import "_contact";
+
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+   
+}

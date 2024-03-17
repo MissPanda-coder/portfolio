@@ -1,54 +1,11 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>Bienvenue sur mon portfolio</title>
-</head>
-<body>
 
-  <section class="underConstruction">
-    <nav class="navbar navbar-default navbar-expand-lg nav-menu">
+<?php
+$title = "underConstruction";
+include '../elementPage/head.php';
+include '../elementPage/navbar.php';
+?>
 
-      <div class="container-fluid">
-
-        <p class="navbar-brand text-uppercase"> MissPanda </p>
-
-        <button class="navbar-toggler nav-button" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar">
-          <div class="line1 ham"></div>
-          <div class="line2 ham"></div>
-          <div class="line3 ham"></div>      
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-end" id="myNavbar"  >
-
-          <ul class="navbar-nav ml-auto">
-
-            <li class="nav-item">
-              <a class="nav-link m-2 menu-item active" href="index.html"> Accueil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link m-2 menu-item" href="aPropos.html"> A propos </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link m-2 menu-item" href="realisations.html"> Réalisations </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link m-2 menu-item" href="contact.html"> Contact </a>
-            </li>
-
-
-          </ul>
-
-        </div>
-
-      </div>
-
-
-    </nav>
-  
+    
 <section id="realisations">
     <section class="advice">
       <h1 class="advice__title">Site under construction or maintenance </h1>
@@ -129,10 +86,9 @@
     </section>
 </section>
   </section>
-<script src="main.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-  
-</body>
+  <?php
+include '../elementPage/footer.php';
+?>
 </html>
+
     

@@ -1,5 +1,4 @@
-
-@import "_accueil";
+@import "_variables";
 
 // Variables
 $c-main: hsla(0, 100%, 100%, .75);
@@ -21,7 +20,7 @@ $media450: 450px;
 
 // General
 
-.underConstruction {
+#underConstruction {
   height: 100vh;
   background: #0F173E;
   background: -moz-linear-gradient(top, #0F173E 0%, #1B76A4 60%, #3B545D 100%);

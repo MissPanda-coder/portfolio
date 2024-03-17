@@ -1,7 +1,7 @@
-@import "_accueil";
+@import "_variables";
 
-  .fullscreenContact{
-    background-color: black;
+  #contact{
+    background-color: #0F0F0F;
     width: 100%;
     height: 100vh;
   }
@@ -24,10 +24,9 @@
     padding: 20px;
     position: relative;
     max-width: 840px;
-    
   }
   
-  .form-horizontal {
+  #contact-form {
     max-width: 400px;
     font-family: bebas, sans-serif;
   }
